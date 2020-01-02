@@ -2,11 +2,11 @@ import mysql.connector
 
 database = mysql.connector.connect(
    user = 'root',
-   password = '95859585Dr!',
+   password = 'yourpassword',
    host = 'localhost',
    port = '3306',
-   database = 'aiore_tool_kit',
-   auth_plugin = 'mysql_native_password'
+   database = 'your_database_name',
+   auth_plugin = 'mysql_native_password' #only use this if you are using legacy python or run into an auth_plugin error
    )
 
 cursor = database.cursor()
